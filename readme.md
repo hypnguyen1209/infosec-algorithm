@@ -81,6 +81,7 @@ Ví dụ: cho $W$ = 8, xét $F_{2147483647}$, hãy biểu diễn số $a$ = 2345
 1. Dùng thuật toán Algorithm 1 để thu được $(ε, c)$ với $c = a + b$ $mod$ $2^{Wt}$ và $ε$ là bit nhớ.
 
 2. Nếu $ε = 1$ thì trừ $p$ từ $c = (C[t – 1], …, C[2], C[1], C[0])$;
+<br>
 Ngược lại nếu $c \ge p$ thì $c ←  c - p$
 
 3. Return $(c)$
