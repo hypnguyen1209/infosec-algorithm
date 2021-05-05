@@ -50,6 +50,7 @@ Ví dụ: cho $W$ = 8, xét $F_{2147483647}$, hãy biểu diễn số $a$ = 2345
 #### Algorithm 1. Multiprecision addition
 
 **Input**: số nguyên $a, b \in [0, 2^{Wt})$
+<br>
 **Output**: $(ε, c)$ với $c = a + b$ $mod$ $2^{Wt}$ và ε là bit nhớ
 
 1. $(ε, C[0]) ← A[0] + B[0]$
@@ -62,6 +63,7 @@ Ví dụ: cho $W$ = 8, xét $F_{2147483647}$, hãy biểu diễn số $a$ = 2345
 #### Algorithm 2. Multiprecision subtraction
 
 **Input**: số nguyên $a, b \in [0, 2^{Wt})$
+<br>
 **Output**: $(ε, c)$ với $c = a - b$ $mod$ $2^{Wt}$ và ε là bit mượn
 1. $(ε, C[0]) ← A[0] - B[0]$
 2 For $i$ from $1$ to $t - 1$ do
@@ -73,6 +75,7 @@ Ví dụ: cho $W$ = 8, xét $F_{2147483647}$, hãy biểu diễn số $a$ = 2345
 #### Algorithm 3. Addition in $F_{p}$
 
 **Input**: số modulo $p$, số nguyên $a, b \in [0, p − 1]$
+<br>
 **Output**: $c = a + b$ $mod$ $p$
 
 1. Dùng thuật toán Algorithm 1 để thu được $(ε, c)$ với $c = a + b$ $mod$ $2^{Wt}$ và $ε$ là bit nhớ.
@@ -87,6 +90,7 @@ Ngược lại nếu $c \ge p$ thì $c ←  c - p$
 #### Algorithm 4. Subtraction in $F_{q}$
 
 **Input**: số modulo $p$, số nguyên $a, b \in [0, p − 1]$
+<br>
 **Output**: $c = a - b$ $mod$ $p$
 
 1. Dùng thuật toán Algorithm 2 để thu được $(ε, c)$ với $c = a - b$ $mod$ $2^{Wt}$ và $ε$ là bit nhớ.
