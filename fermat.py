@@ -15,10 +15,10 @@ def square_loop(a, k, n, t):
 	return b
 
 def solve(a, n, t):
-	r = square_loop(a, n - 1, n, t)
 	for _ in range(t):
-		if not r == 1:
-			return 'HS'
+	r = square_loop(a, n - 1, n, t)
+	if not r == 1:
+		return 'HS'
 	return 'NT'
 
 if __name__ == '__main__':
